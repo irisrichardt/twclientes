@@ -22,7 +22,7 @@ public class HomeController {
 
         modelAndView.setViewName("mensagem");
         modelAndView.addObject("mensagem", "Mensagem vinda do servidor!");
-        
+
         return modelAndView;
     }
 
@@ -32,7 +32,7 @@ public class HomeController {
 
         modelAndView.setViewName("saudacao");
         modelAndView.addObject("nome", nome);
-        
+
         return modelAndView;
     }
 
@@ -43,7 +43,7 @@ public class HomeController {
 
         modelAndView.setViewName("cumprimento");
         modelAndView.addObject("nome", nome);
-        
+
         return modelAndView;
     }
 
