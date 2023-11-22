@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">TWClientes</a>
+          <a class="navbar-brand" href="/cliente">TWClientes</a>
         </div>
     </nav>
     <main class="container">
@@ -34,11 +34,11 @@
                             <strong>Data de nascimento:</strong> <spam th:text="${cliente.dataNascimento}"></spam>
                         </p>
 
-                        <a 
+                        <a
                             th:href="@{/cliente/{id}/editar (id=${cliente.id})}"
                             class="btn btn-warning">Editar</a>
-                        <a 
-                            th:href="@{/cliente/{id}/excluir (id=${cliente.id})}" 
+                        <a
+                            th:href="@{/cliente/{id}/excluir (id=${cliente.id})}"
                             class="btn btn-danger"
                             onclick="return confirm('Deseja realmente excluir este cliente?');"
                         >Excluir</a>
